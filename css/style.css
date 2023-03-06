@@ -1,0 +1,165 @@
+
+/* imports */
+
+@font-face {
+    font-family: "Bebas_Neue";
+    src: url(../assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+
+/* reset */
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-grid {
+
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+/* border:  2px solid yellow; */
+}
+
+body {
+    background-color: #080324;
+    color: white;
+}
+
+
+/* HEADER */
+
+header {
+
+    width: 100%;
+    height: 60px;
+    background-color: #f9003d
+}
+
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    height:  100%;
+
+}
+
+main .layout-grid{
+    color:white;
+}   
+
+header  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    /* border: 3px solid white; */
+}
+
+header nav a {
+font-family: "Bebas_Neue";
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 18px;
+letter-spacing: 1px;
+text-shadow: 2px 2px 10px black; 
+padding: 10px 10px;
+border-radius: 5px;
+
+}
+
+header nav a:hover {
+    background-color: white;
+    text-shadow: 0pc 0px 5px rgb(249, 0, 61, 0.3);
+    color: #f9003d;
+
+}
+
+/* MAIN */
+
+main .banner{
+    height: 740px;
+    background-image: url(../assets/images/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-position: bottom;
+    
+
+
+    /* background-size: contain; */
+    /* background-position: center, center; */
+}
+
+main .banner-flex{
+ display: flex;
+ align-items: center;
+ height: 100%;
+ /* border: 3px solid white;  */
+
+}
+
+main .banner-flex #banner-infobox{
+width: 560px;
+
+
+}
+main .banner-flex h1 {
+    margin-bottom: 40px;
+    font-family: Bebas_Neue;
+    font-size:  96px;
+    color: white;
+}
+
+main .banner-flex p {
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f9003d;
+}
+
+/* sobre */
+
+main .sobre h2{
+
+    font-family:Bebas_Neue;
+    font-size: 64px;
+    color: #f9003d;
+
+}
+
+main .sobre .linha{
+
+     display: flex;
+     justify-content: space-between;
+}
+
+main .sobre .linha img{
+
+    width: 490px;
+}
+
+main .sobre .linha .participantes{
+
+    width: 590px;
+
+    border: 2pc color yellow;
+}
+
+
+
+
+/* 
+main .banner-flex #banner-infobox,
+main .banner-flex h1,
+main .banner-flex p,
+main .banner-flex img 
+{
+    border: 3px solid yellow
+}
+ */
