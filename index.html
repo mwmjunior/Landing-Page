@@ -12,13 +12,20 @@
 <body>
     <header>
         <div class="header-flex layout-grid">
-            <nav>
-                <a href="">ício</a>
+            <nav id="navmenu">
+                <a href="">ínicio</a>
                 <a href="">Sobre</a>
                 <a href="">Desafios</a>
                 <a href="">Endereço</a>
+            </nav>
+
+            <img id= "iconehamburger" src="./assets/icons/menu_hamburger.svg " alt="Abre o menu hamburger" onclick="mostrarMenu()" >
+            
         </div>
-        </nav>
+
+            
+            
+        
     </header>
 
     <main>
@@ -74,7 +81,11 @@
 
     </footer>
 
-
+    <script>
+        function mostrarMenu() {
+            document.getElementById("navmenu").classList.toggle("mostrarMenu");
+        }
+    </script>
 
 
 </body>
